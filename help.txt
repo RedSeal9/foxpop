@@ -1,0 +1,8 @@
+foxpop: a firefox setter-upper
+
+available options:
+<none>: will fetch the configuration gob from a predefined server
+
+l <fqdn>: will set the server that the configuration gob is fetched from
+
+c <infile> <outfile>: will export a configuration gob as the outfile, with each line of the infile formatted as such: <name>,<value>,<valuetype>

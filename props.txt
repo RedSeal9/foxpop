@@ -1,0 +1,2 @@
+//browser.urlbar.dnsResolveSingleWordsAfterSearch,0,i
+browser.fixup.domainsuffixwhitelist.loc,true,b
