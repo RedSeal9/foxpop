@@ -22,15 +22,15 @@ func StringifyUserJS(data Data) string {
 }
 
 func unfuck(v interface{}) string {
-	switch v.(type) {
+	switch v := v.(type) {
 	case int:
-		return strconv.Itoa(int(v.(int)))
+		return strconv.Itoa(v)
 	case int64:
-		return strconv.Itoa(int(v.(int64)))
+		return strconv.Itoa(int(v))
 	case bool:
-		return strconv.FormatBool(v.(bool))
+		return strconv.FormatBool(v)
 	case string:
-		return string(v.(string))
+		return v
 	}
 	return ""
 }
